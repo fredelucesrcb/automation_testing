@@ -15,11 +15,13 @@ public class Hooks {
 
     @Before()
     public void before() {
+        System.out.println("-----------------Start of Scenario-----------------");
         driver.start();
     }
 
     @After()
     public void after() {
+        System.out.println("-----------------End of Scenario-----------------");
         driver.close();
     }
 }
